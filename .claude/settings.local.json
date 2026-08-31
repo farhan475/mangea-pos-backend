@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(go mod *)",
+      "Bash(go build *)",
+      "Bash(docker compose up *)",
+      "Bash(sudo systemctl status mysql)",
+      "Bash(sudo service mysql status)",
+      "Bash(sudo mysql -h 127.0.0.1 -u root -e \"CREATE DATABASE IF NOT EXISTS mangea; SHOW DATABASES LIKE 'mangea';\")",
+      "Bash(mysql *)",
+      "Bash(timeout 5 go run ./cmd/api)"
+    ]
+  }
+}
